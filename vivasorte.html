@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viva Sorte - Baixe o App Oficial (APK)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, #0056b3 0%, #00aaff 100%);
+        }
+
+        .btn-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .phone-mockup {
+            max-width: 280px;
+            filter: drop-shadow(0 25px 25px rgba(0,0,0,0.2));
+        }
+
+        @keyframes bounce-slow {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .animate-bounce-slow {
+            animation: bounce-slow 3s infinite ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navegação -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="bg-blue-600 text-white p-2 rounded-lg">
+                    <i class="fas fa-clover fa-lg"></i>
+                </div>
+                <span class="text-2xl font-bold text-blue-700">Viva Sorte</span>
+            </div>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="#inicio" class="hover:text-blue-600 transition">Início</a>
+                <a href="#como-funciona" class="hover:text-blue-600 transition">Como Funciona</a>
+                <a href="#beneficios" class="hover:text-blue-600 transition">Benefícios</a>
+            </div>
+            <a href="#download" class="bg-blue-600 text-white px-6 py-2 rounded-full font-bold hover:bg-blue-700 transition shadow-lg">Baixar APK</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-gradient pt-32 pb-20 px-6">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+            <div class="md:w-1/2 text-white mb-12 md:mb-0">
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6">
+                    A sorte está nas tuas mãos!
+                </h1>
+                <p class="text-lg md:text-xl mb-8 opacity-90">
+                    Descarrega a aplicação oficial via APK e começa a concorrer a casas, carros e prémios em dinheiro agora mesmo.
+                </p>
+                <div class="flex flex-wrap gap-4" id="download">
+                    <!-- Botão de Download Direto APK -->
+                    <a href="https://vivasorteoficial.com.br/vivasorte.apk" class="btn-hover bg-yellow-400 text-blue-900 px-10 py-5 rounded-2xl flex items-center transition group shadow-2xl border-b-4 border-yellow-600">
+                        <div class="bg-blue-900 text-yellow-400 w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-android fa-2x"></i>
+                        </div>
+                        <div class="text-left">
+                            <p class="text-xs font-bold uppercase tracking-widest opacity-80">Versão Android</p>
+                            <p class="text-xl font-black leading-none">Instalar Ficheiro APK</p>
+                        </div>
+                    </a>
+                </div>
+                <p class="mt-4 text-sm opacity-70 italic">
+                    * Necessário permitir a instalação de fontes desconhecidas nas definições.
+                </p>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative animate-bounce-slow">
+                    <!-- Representação visual do telemóvel -->
+                    <div class="bg-white p-4 rounded-[3rem] border-[8px] border-gray-900 phone-mockup">
+                        <div class="bg-blue-50 rounded-[2rem] overflow-hidden h-[500px] flex flex-col items-center justify-center p-6 text-center">
+                            <div class="w-24 h-24 bg-blue-600 rounded-3xl flex items-center justify-center shadow-inner mb-6">
+                                <i class="fas fa-clover text-white text-5xl"></i>
+                            </div>
+                            <h3 class="font-bold text-blue-900 text-xl mb-2">Viva Sorte App</h3>
+                            <p class="text-sm text-blue-700 px-4">Tudo pronto para mudares de vida? O APK é seguro e oficial.</p>
+                            <div class="mt-8 w-full bg-blue-200 h-10 rounded-xl flex items-center justify-center text-blue-600 font-bold text-xs uppercase tracking-tighter">
+                                Prêmios Disponíveis
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Crachá Flutuante -->
+                    <div class="absolute -bottom-6 -left-6 bg-green-500 text-white p-4 rounded-2xl shadow-xl font-bold flex items-center">
+                        <i class="fas fa-shield-alt mr-2"></i>
+                        <p>100% Seguro</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Como Instalar APK -->
+    <section id="como-funciona" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Como instalar o APK?</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Siga estes passos simples para instalar a aplicação manualmente no seu Android.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="text-center p-8 rounded-2xl bg-gray-50 hover:shadow-md transition">
+                    <div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold">1</div>
+                    <h3 class="text-xl font-bold mb-4">Descarregar</h3>
+                    <p class="text-gray-600">Clique no botão amarelo acima para iniciar o download do ficheiro APK.</p>
+                </div>
+                <div class="text-center p-8 rounded-2xl bg-gray-50 hover:shadow-md transition">
+                    <div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold">2</div>
+                    <h3 class="text-xl font-bold mb-4">Autorizar</h3>
+                    <p class="text-gray-600">Se o sistema perguntar, ative a opção "Permitir desta fonte" nas definições.</p>
+                </div>
+                <div class="text-center p-8 rounded-2xl bg-gray-50 hover:shadow-md transition">
+                    <div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold">3</div>
+                    <h3 class="text-xl font-bold mb-4">Abrir e Ganhar</h3>
+                    <p class="text-gray-600">Abra o ficheiro, conclua a instalação e faça o seu login ou registo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefícios -->
+    <section id="beneficios" class="py-20 bg-blue-900 text-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-8 text-yellow-400">Vantagens do Viva Sorte</h2>
+                    <ul class="space-y-6">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-400 mt-1 mr-4 text-xl"></i>
+                            <div>
+                                <h4 class="font-bold text-lg">Impacto Social Real</h4>
+                                <p class="text-blue-100">Parte do valor é destinado a instituições como o Hospital do Câncer de Londrina.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-400 mt-1 mr-4 text-xl"></i>
+                            <div>
+                                <h4 class="font-bold text-lg">Sorteios Semanais</h4>
+                                <p class="text-blue-100">Acompanhe os resultados todos os domingos na Band TV.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-400 mt-1 mr-4 text-xl"></i>
+                            <div>
+                                <h4 class="font-bold text-lg">Segurança Digital</h4>
+                                <p class="text-blue-100">Transações 100% seguras através de PIX ou cartão de crédito.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="md:w-1/2 grid grid-cols-2 gap-4">
+                    <div class="bg-white/10 p-6 rounded-2xl backdrop-blur-sm border border-white/20">
+                        <i class="fas fa-car text-3xl mb-4 text-yellow-400"></i>
+                        <h4 class="font-bold">Carros Novos</h4>
+                    </div>
+                    <div class="bg-white/10 p-6 rounded-2xl backdrop-blur-sm border border-white/20">
+                        <i class="fas fa-home text-3xl mb-4 text-yellow-400"></i>
+                        <h4 class="font-bold">Casas Próprias</h4>
+                    </div>
+                    <div class="bg-white/10 p-6 rounded-2xl backdrop-blur-sm border border-white/20">
+                        <i class="fas fa-money-bill-wave text-3xl mb-4 text-yellow-400"></i>
+                        <h4 class="font-bold">Dinheiro na Hora</h4>
+                    </div>
+                    <div class="bg-white/10 p-6 rounded-2xl backdrop-blur-sm border border-white/20">
+                        <i class="fas fa-user-check text-3xl mb-4 text-yellow-400"></i>
+                        <h4 class="font-bold">Ganhadores</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-gray-900 text-gray-400 py-12 px-6">
+        <div class="container mx-auto text-center">
+            <div class="flex justify-center items-center space-x-2 mb-8">
+                <i class="fas fa-clover text-blue-500 text-2xl"></i>
+                <span class="text-white text-xl font-bold">Viva Sorte</span>
+            </div>
+            <p class="mb-8 max-w-lg mx-auto">
+                Ajude quem precisa e concorra a prémios incríveis. Títulos de Capitalização da Modalidade Filantropia Premiável.
+            </p>
+            <div class="border-t border-gray-800 pt-8 text-xs">
+                <p>&copy; 2024 Viva Sorte Oficial. Todos os direitos reservados.</p>
+                <p class="mt-2 italic">Atenção: A instalação de ficheiros APK é da responsabilidade do utilizador. Utilize apenas o link oficial.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
